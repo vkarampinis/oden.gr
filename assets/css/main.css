@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+
 html, body {height: 100%}
+
 body {
     background: #000 url(../images/background.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -9,21 +11,25 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
-a,a:hover {
-    color: #60AF01;
-}
+
+a{ color: #60AF01; }
+a:hover { color: #1EAEDB; }
+
 input[type=email],textarea {
     background-color: #2A2B2F;
     border-color: #14181A;
 }
+
 input[type=submit].button-primary {
     background: #60AF01;
     border:0px;
 }
+
 textarea:focus, input[type=email]:focus {
     border: 1px solid #383838;
 }
-lable {
+
+label {
     font-weight: 400;
 }
 
@@ -35,6 +41,7 @@ div.container {
     -moz-box-shadow: 8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
     box-shadow: 8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
 }
+
 div.container.fixed section#profile {
     padding-top: 90px;
 }
@@ -47,6 +54,7 @@ div.container.fixed header {
     width: inherit;
     line-height: 50px;
 }
+
 div.container.fixed header div.logo { font-size: 28px; }
 
 header {
@@ -60,17 +68,21 @@ div.logo {
     font-family: 'Roboto', sans-serif;
     padding-left: 30px;
 }
+
 div.logo span.tags, nav span.tags { color: #a4a4a4; }
+
 div.logo span.element {
     margin-left: -10px;
     margin-right: -10px;
 }
+
 nav ul { 
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     width: 250px;
 }
+
 nav li { 
     display: inline-block;
     cursor: pointer;
@@ -84,14 +96,13 @@ nav li:hover span.tags { display: inline-block;}
 nav li a.element { padding-left: 7px; color: #fff; text-decoration: none; }
 nav li:hover a.element { padding-left: 0px; }
 
-
-
 section { 
     border-bottom: 1px dashed #545454;
     position: relative;
     margin-bottom: 50px;
     padding-bottom: 50px;
 }
+
 section:before {
     content: "<!";
     position: absolute;
@@ -101,6 +112,7 @@ section:before {
     font-size: 16px;
     font-weight: bold;
 }
+
 section:after {
     content: ">";
     position: absolute;
@@ -110,9 +122,11 @@ section:after {
     font-size: 16px;
     font-weight: bold;
 }
+
 #profile div.picture-container {
     padding-bottom: 20px;
 }
+
 #profile div.picture {
     background-image: url(../images/profile.jpg);
     background-repeat: no-repeat;
@@ -139,6 +153,7 @@ section:after {
     color: #a4a4a4;
     font-size: 16px;
 }
+
 div.progressbar {
     margin-bottom: 10px;
 }
@@ -149,6 +164,7 @@ div.progressbar-container {
     padding-left: 8px;
     padding-right: 10px;
 }
+
 div.progressbar-container div.full {
     display: inline-block;
     background: url(../images/progressbar-inner-full.png) repeat-x;
@@ -156,6 +172,7 @@ div.progressbar-container div.full {
     min-width: 10px;
     position: relative;
 }
+
 div.progressbar-container div.full:before {
     content: "";
     background: url(../images/progressbar-corner-full.png) no-repeat;
@@ -164,6 +181,8 @@ div.progressbar-container div.full:before {
     position: absolute;
     left: -10px;
 }
+
+
 div.progressbar-container div.full:after {
     content: "";
     background: url(../images/progressbar-corner-full.png) no-repeat;
@@ -179,6 +198,7 @@ div.progressbar-container div.full:after {
     -ms-filter: "FlipH";
     z-index: 100;
 }
+
 div.progressbar-container div.empty {
     display: inline-block;
     background: url(../images/progressbar-inner-empty.png) repeat-x;
@@ -187,6 +207,7 @@ div.progressbar-container div.empty {
     position: relative;
     width: 100%;
 }
+
 div.progressbar-container div.empty:before {
     content: "";
     background: url(../images/progressbar-corner-empty.png) no-repeat;
@@ -213,6 +234,16 @@ footer {
     font-size: 14px;
     color: #a4a4a4;
 }
+
+div.social {
+    font-size: 30px;
+    position: absolute;
+    bottom: 15px;
+    left: 70px;
+}
+
+div.social a { color: #fff; }
+div.social a:hover { color: #1EAEDB; }
 
 @media (max-width: 768px) {
     div.container {
