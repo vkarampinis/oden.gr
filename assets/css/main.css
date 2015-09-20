@@ -76,11 +76,10 @@ div.logo span.element {
     margin-right: -10px;
 }
 
+nav { text-align: center; }
+
 nav ul { 
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
+    margin: 0 auto;
 }
 
 nav li { 
@@ -89,6 +88,7 @@ nav li {
     line-height: 28px;
     font-weight: bold;
     width: 80px;
+    text-align: left;
 }
 
 nav li span.tags { display: none;}
