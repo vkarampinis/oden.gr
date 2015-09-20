@@ -67,6 +67,7 @@ div.logo {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     padding-left: 30px;
+    white-space:nowrap;
 }
 
 div.logo span.tags, nav span.tags { color: #a4a4a4; }
@@ -89,6 +90,7 @@ nav li {
     font-weight: bold;
     width: 80px;
     text-align: left;
+    white-space:nowrap;
 }
 
 nav li span.tags { display: none;}
@@ -122,6 +124,7 @@ section:after {
     font-size: 16px;
     font-weight: bold;
 }
+#profile div.column:first-child { position: relative; }
 
 #profile div.picture-container {
     padding-bottom: 20px;
@@ -238,7 +241,7 @@ footer {
 div.social {
     font-size: 30px;
     position: absolute;
-    bottom: 15px;
+    bottom: -50px;
     left: 70px;
 }
 
@@ -248,5 +251,22 @@ div.social a:hover { color: #1EAEDB; }
 @media (max-width: 768px) {
     div.container {
         width: 100%;
+    }
+}
+@media (max-width: 549px) {
+    div.container.fixed header div.column:first-child {
+        display: none;
+    }
+    div.container header {
+        text-align: center;
+    }
+    #profile div.column:first-child { margin-bottom: 50px; }
+    #profile div.picture { margin: 0 auto; }
+    #profile div.info { text-align: center; }
+
+    #profile div.social {
+        left: 25%;
+        right: 25%;
+        text-align: center;
     }
 }
