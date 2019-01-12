@@ -73,31 +73,11 @@ nav li a.element { padding-left: 7px; color: #fff; text-decoration: none; }
 nav li:hover a.element { padding-left: 0px; }
 
 section { 
-    border-bottom: 1px dashed #545454;
     position: relative;
     margin-bottom: 50px;
     padding-bottom: 50px;
 }
 
-section:before {
-    content: "<!";
-    position: absolute;
-    bottom: -12px;
-    color: #545454;
-    left: -14px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-section:after {
-    content: ">";
-    position: absolute;
-    bottom: -12px;
-    color: #545454;
-    right: -10px;
-    font-size: 16px;
-    font-weight: bold;
-}
 #profile div.column:first-child { position: relative; }
 
 #profile div.picture-container {
