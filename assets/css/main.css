@@ -40,6 +40,7 @@ div.container {
     -webkit-box-shadow:8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
     -moz-box-shadow: 8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
     box-shadow: 8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
+    margin-top: 10%;
 }
 
 div.container.fixed section#profile {
