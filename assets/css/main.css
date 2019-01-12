@@ -18,20 +18,6 @@ body {
 a{ color: #60AF01; }
 a:hover { color: #1EAEDB; }
 
-input[type=email],textarea {
-    background-color: #2A2B2F;
-    border-color: #14181A;
-}
-
-input[type=submit].button-primary {
-    background: #60AF01;
-    border:0px;
-}
-
-textarea:focus, input[type=email]:focus {
-    border: 1px solid #383838;
-}
-
 label {
     font-weight: 400;
 }
@@ -44,21 +30,6 @@ div.container {
     -moz-box-shadow: 8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
     box-shadow: 8px 0 15px 0px rgba(0, 0, 0, 0.50), -8px 0 15px 0px rgba(0, 0, 0, 0.50);
 }
-
-div.container.fixed section#profile {
-    padding-top: 90px;
-}
-
-div.container.fixed header {
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.85);
-    position: fixed;
-    margin-left: -20px;
-    width: inherit;
-    line-height: 50px;
-}
-
-div.container.fixed header div.logo { font-size: 28px; }
 
 header {
     margin-bottom: 30px;
@@ -158,69 +129,6 @@ section:after {
     font-size: 16px;
 }
 
-div.progressbar {
-    margin-bottom: 10px;
-}
-
-div.progressbar-container {
-    height: 18px;
-    width: 90%;
-    padding-left: 8px;
-    padding-right: 10px;
-}
-
-div.progressbar-container div.full {
-    display: inline-block;
-    background: url(../images/progressbar-inner-full.png) repeat-x;
-    height: inherit;
-    min-width: 10px;
-    position: relative;
-}
-
-div.progressbar-container div.full:before {
-    content: "";
-    background: url(../images/progressbar-corner-full.png) no-repeat;
-    height: 18px;
-    width: 10px;
-    position: absolute;
-    left: -10px;
-}
-
-
-div.progressbar-container div.full:after {
-    content: "";
-    background: url(../images/progressbar-corner-full.png) no-repeat;
-    height: 18px;
-    width: 10px;
-    position: absolute;
-    right: -10px;
-    -moz-transform:     scaleX(-1);
-    -o-transform:       scaleX(-1);
-    -webkit-transform:  scaleX(-1);
-    transform:          scaleX(-1);
-    filter:     FlipH;
-    -ms-filter: "FlipH";
-    z-index: 100;
-}
-
-div.progressbar-container div.empty {
-    display: inline-block;
-    background: url(../images/progressbar-inner-empty.png) repeat-x;
-    height: inherit;
-    min-width: 10px;
-    position: relative;
-    width: 100%;
-}
-
-div.progressbar-container div.empty:before {
-    content: "";
-    background: url(../images/progressbar-corner-empty.png) no-repeat;
-    height: 18px;
-    width: 10px;
-    position: absolute;
-    right: -10px;
-}
-
 .copy-left {
     display: inline-block;
     text-align: right;
@@ -255,9 +163,6 @@ div.social a:hover { color: #1EAEDB; }
     }
 }
 @media (max-width: 549px) {
-    div.container.fixed header div.column:first-child {
-        display: none;
-    }
     div.container header {
         text-align: center;
     }
