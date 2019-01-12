@@ -163,6 +163,9 @@ div.social a:hover { color: #1EAEDB; }
     }
 }
 @media (max-width: 549px) {
+    body {
+        display: block;
+    }
     div.container header {
         text-align: center;
     }
