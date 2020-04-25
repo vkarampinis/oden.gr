@@ -1,0 +1,19 @@
+p > a {
+  @apply z-50 relative inline-block border-b border-dashed border-my-c3 no-underline text-my-c3;
+  transition: all 250ms;
+}
+
+p > a:before {
+  @apply w-full h-0 bg-my-c3 bottom-0 left-0 absolute;
+  content: "";
+  z-index: -1;
+  transition: height 250ms;
+}
+
+p > a:hover {
+  @apply text-white bg-transparent;
+}
+
+p > a:hover:before {
+  @apply h-full
+}
