@@ -1,0 +1,5 @@
+<nav>
+  {{ range .Site.Menus.main }}
+    <a class="hover:text-my-c3 text-2xl font-bold pr-4" href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>
